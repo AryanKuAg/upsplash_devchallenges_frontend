@@ -17,6 +17,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --quiet",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,html}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,html}\"",
+    "typecheck": "tsc --noEmit",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
